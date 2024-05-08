@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QuantumGateSimulator</class>
+ <widget class="QMainWindow" name="QuantumGateSimulator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>887</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quantum Gate Simulator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QComboBox" name="qubitSelector">
+      <item>
+       <property name="text">
+        <string>1 Qubit</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2 Qubits</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="gateSequenceDisplay">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Gate sequence will appear here...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="clearButton">
+      <property name="text">
+       <string>Clear Sequence</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="gateButtonLayout">
+      <item>
+       <widget class="QPushButton" name="btnX0">
+        <property name="text">
+         <string>X0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnX1">
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnY0">
+        <property name="text">
+         <string>Y0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnY1">
+        <property name="text">
+         <string>Y1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnZ0">
+        <property name="text">
+         <string>Z0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnZ1">
+        <property name="text">
+         <string>Z1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnH0">
+        <property name="text">
+         <string>H0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnH1">
+        <property name="text">
+         <string>H1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCX">
+        <property name="text">
+         <string>CX</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSW">
+        <property name="text">
+         <string>SWAP</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="runSimulationButton">
+      <property name="text">
+       <string>Get Result</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="resultDisplay">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Results will appear here...</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>887</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionfg"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actiondfdf">
+   <property name="text">
+    <string>dfdf</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+  <action name="actionsdfd">
+   <property name="text">
+    <string>sdfd</string>
+   </property>
+  </action>
+  <action name="actionfg">
+   <property name="text">
+    <string>Description</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
