@@ -19,7 +19,7 @@ set(CMAKE_AUTORCC ON)
 
 
 
-# Добавляем исполняемый файл проекта
+
 add_executable(${PROJECT_NAME}
     main.cpp
     MainWindow.cpp
